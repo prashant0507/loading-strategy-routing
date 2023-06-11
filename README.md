@@ -5,8 +5,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## What we covered
 * Lazy Loading 
 * Routing
+* WildCard Routing
 * Pass data and get data by URL
-* Other topic related to ROuting
+* Other topic related to Routing
+* this.route.snapshot.paramMap.get('prevRoute') (route: ActivatedRoute)
+* this.route.snapshot.params['prevRoute'] (route: ActivatedRoute)
+* this.route.params.subscribe (route: ActivatedRoute)
+* route.data.subscribe (route: ActivatedRoute)
 
 ## Development server
 
