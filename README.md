@@ -6,12 +6,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Lazy Loading 
 * Routing
 * WildCard Routing
-* Pass data and get data by URL
-* Other topic related to Routing
+
+* Pass data by URL (path:'setpassword/:userId/:city',)
+* URL (localhost:4200/account/setpassword/1/Gwalior)
+* Get data by url this.route.params.subscribe
+* Link [routerLink]="[setPasswordLink, userId, userCity]"
+* router.navigate(['account/setpassword', this.userId, this.userCity]);
+
 * this.route.snapshot.paramMap.get('prevRoute') (route: ActivatedRoute)
 * this.route.snapshot.params['prevRoute'] (route: ActivatedRoute)
 * this.route.params.subscribe (route: ActivatedRoute)
-* route.data.subscribe (route: ActivatedRoute)
+
+* Pass data from routing.module (data: {link: 'SIGNUP URL'})
+* Get data which pass by routing.module route.data.subscribe (route: ActivatedRoute)
 
 ## Development server
 

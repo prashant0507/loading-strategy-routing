@@ -10,7 +10,14 @@ export class SignupComponent implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
+  setPasswordLink: string = '../setpassword';
+  userId: string = '1';
+  userCity: string = 'Gwalior';
+
   ngOnInit(): void { 
+
+    console.log("fragment", this.route.snapshot.fragment);
+
     // Getting data which is send by router.navigate()
     let prevRoute = this.route.snapshot.paramMap.get('prevRoute');
     console.log('prevRoute using route.snapshot.paramMap', prevRoute);
@@ -33,6 +40,10 @@ export class SignupComponent implements OnInit {
 
   navigateToSignin() {
     this.router.navigate(['account/login', { prevRoute: 'signup', city: 'Seondha' }]);
+  }
+
+  setPassword(){
+    this.router.navigate(['account/setpassword', this.userId, this.userCity]);
   }
 
 }
